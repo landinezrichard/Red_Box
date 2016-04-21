@@ -1,0 +1,23 @@
+section.Form
+	div.Form-carta
+		a.Form-cartaBg(href="")
+			img.Form-cartaImg(src="../images/01-index/carta.png")
+			h3.Form-cartaTxt
+				|	Aquí puedes ver nuestra carta
+	div.Form-verticalBorde
+	form.Form-suscribe
+		h3.Form-suscribeTitle
+			|	Suscríbete
+		p.Form-suscribeP
+			|	Y recibe información y promociones de nuestros productos
+		fieldset.Form-field
+			label.Form-label(for="name")
+				|	Nombre
+			input.Form-input(type="text", name="name")
+		fieldset.Form-field
+			label.Form-label(for="email")
+				|	E-mail
+			input.Form-input(type="email", name="email")
+		div.Form-btnContainer
+			input.Form-button(type="submit", name="enviar")
+	include ../Sedes/template.jade

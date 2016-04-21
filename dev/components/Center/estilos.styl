@@ -21,7 +21,7 @@
 		display inline-block
 		cursor pointer
 		vertical-align top
-		margin 2.5%
+		margin 2.5% 30px
 		&:hover
 			.Center-redBox
 				animation .3s rotarZ
@@ -33,6 +33,8 @@
 		border-radius 10px
 		transform rotateZ(-7deg)
 		transition all .3s ease
+	&-redimage
+		transform rotateZ(7deg)
 	&-pedido
 		font-family: 'Handlee', cursive
 		font-weight 400
@@ -53,10 +55,14 @@
 		
 @keyframes rotarZ
 	0%
-		transform rotateZ(-7deg)
+		transform rotateZ(10deg)
 	25%
-		transform rotateZ(0deg)
+		transform rotateZ(-11deg)
 	75% 
 		transform rotateZ(7deg)
 	100%
 		transform rotateZ(0deg)
+@media screen and (min-width:400px)
+	.Center
+		&-item
+			margin 2.5%

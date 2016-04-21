@@ -1,0 +1,59 @@
+/*SEDES*/
+
+.Sedes
+	display inline-block
+	width 100%	
+	background $red url('../images/01-index/fondo-nubes.png') bottom no-repeat
+	position relative
+	&-title
+		font-weight 400
+		font-size 3.16em
+		color $white
+		margin 0
+		width 100%
+	&-list
+		display inline-block
+		width 100%
+		float left
+	// 	background url('../images/01-index/fondo-nubes.png') center no-repeat
+	&-item
+		cursor pointer
+		display inline-block
+		margin 20px 75px
+		&:hover
+			.Sedes-img
+				animation .3s rotarZ
+	&-img
+		transition all .3s ease
+	&-itemTitle
+		font-family: 'Handlee', cursive
+		font-weight 400
+		font-size 1.25em
+		color $white
+		margin 0
+@keyframes rotarZ
+	0%
+		transform rotateZ(10deg)
+	25%
+		transform rotateZ(-11deg)
+	75% 
+		transform rotateZ(7deg)
+	100%
+		transform rotateZ(0deg)
+@media screen and (min-width:600px)
+	.Sedes
+		&-item
+			width 25% 
+			margin 20px 0
+
+@media screen and (min-width:840px)
+	.Sedes	
+		height 140px
+		&-item
+			width auto
+		
+/*Tablet Landscape*/
+@media screen and (min-width:1024px)
+	.Sedes		
+		&-item
+			margin 20px 5%

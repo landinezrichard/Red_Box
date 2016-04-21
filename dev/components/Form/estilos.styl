@@ -1,0 +1,102 @@
+/*FORM*/
+
+.Form
+	display inline-block
+	width 100%
+	background $red
+	&-carta
+		display inline-block
+		width 90%
+		position relative
+		vertical-align top
+		margin 30px 2.5%
+		
+	&-cartaBg
+		display inline-block
+		background url('../images/01-index/fondo-carta.png') bottom no-repeat
+		cursor pointer
+	&-cartaTxt
+		font-weight 400
+		font-size 2.18em
+		color $white
+		margin 0
+		max-width 236px
+		display inline-block
+	&-verticalBorde
+		display none
+		width 3px
+		height 310px
+		background url('../images/01-index/borde-vertical.png') center no-repeat
+		margin 30px
+		vertical-align top
+	&-suscribe
+		display inline-block
+		width 90%
+		margin 30px 2.5%
+		box-sizing border-box
+		vertical-align top		
+		
+	&-suscribeTitle
+		font-weight 400
+		font-size 3.16em
+		color $white
+		margin .2em .7em 0		
+		text-align left
+	&-suscribeP
+		font-family: 'Handlee', cursive
+		font-weight 400
+		font-size 1.25em
+		color $light_white
+		text-align left
+		margin 0
+		margin-bottom 1em
+		
+	&-field
+		font-family: 'Handlee', cursive
+		border none
+		padding 0
+		margin 10px 0
+		text-align left
+	&-label
+		font-family: 'Handlee', cursive
+		font-weight 400
+		font-size 1.25em
+		color $white
+		float left
+		
+	&-input
+		background url('../images/01-index/borde-horiz.png') center no-repeat
+		border none
+		font-family: 'Handlee', cursive
+		font-weight 400
+		font-size 1.25em
+		color $white
+		width 80%
+		float right
+	&-button
+		border none
+		background url('../images/01-index/fondo-btn.png') center no-repeat
+		width 144px
+		height 55px
+		cursor pointer
+		font-weight 400
+		font-size 1.75em
+		color $red
+		float right
+@media screen and (min-width:840px)
+	.Form
+		&-carta
+			width 40%
+		&-suscribe
+			width 40%
+		&-verticalBorde
+			display inline-block
+/*Tablet Landscape*/
+@media screen and (min-width:1024px)
+	.Form
+		&-carta
+			width 40%
+		&-suscribe
+			width 40%
+		&-verticalBorde
+			display inline-block
